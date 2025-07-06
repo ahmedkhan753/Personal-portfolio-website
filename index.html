@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&family=Poppins:wght@100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #05051d;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      background-color: rgb(21, 21, 77);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(159, 159, 233);
+      font-size: 1.04rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 130px 0;
+      align-items: center;
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 2.5rem;
+    }
+
+    .leftSection .btn {
+      padding: 12px;
+      background: rgb(32, 7, 32);
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .leftSection .buttons {
+      padding: 50px 0;
+    }
+
+    .rightSection {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .rightSection img {
+      width: 80%;
+    }
+
+    .slide-in-image {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    }
+
+    .rightSection.active .slide-in-image {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .purple {
+      color: rgb(150, 67, 229);
+    }
+
+    .text-gray {
+      color: gray;
+    }
+
+    #element {
+      color: rgb(150, 67, 229);
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    main hr {
+      border: 0;
+      background: rgb(156, 156, 232);
+      height: 1.2px;
+      margin: 60px 80px;
+    }
+
+    .secondsection h1 {
+      font-size: 1.9rem;
+    }
+
+    .secondsection .box {
+      background-color: white;
+      width: 77vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .secondsection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 120px;
+    }
+
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+      background-color: #05051d;
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 86px;
+      color: gray;
+      width: 150px;
+      font-size: 9px;
+      background-color: #05051d;
+    }
+
+    .footer {
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 233px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+      background-color: rgb(15, 3, 3);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Ahmed's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hey, My Name Is <span class="purple">Ahmed</span>
+        <div>And I Am A Passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <a href="https://github.com/ahmedkhan753" target="_blank"><button class="btn">Visit Github</button></a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="bgi.png" alt="" class="slide-in-image" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondsection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="html.png" />
+          <div class="vertical-title">Html</div>
+          <div class="vertical-desc">
+           Description to be added 
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="css.png" />
+          <div class="vertical-title">Css </div>
+          <div class="vertical-desc">
+            Description to be added 
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="node.png" />
+          <div class="vertical-title">Node.js</div>
+          <div class="vertical-desc">
+            Description to be added.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="python.png" />
+          <div class="vertical-title">Python Development</div>
+          <div class="vertical-desc">
+            Description to be added.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="java.png" />
+          <div class="vertical-title">Java Development</div>
+          <div class="vertical-desc">
+            Description to be added.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Ahmed's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Gmail : ahmedk32410@gmail.com </li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Phone : +92 3341229637 </li>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Linkedln : M Ahmed </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright © www.ahmedDeveloper.com | All rights reserved
+    </div>
+  </footer>
+
+  <!-- Typed.js Animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Python Developer', 'Tech Enthusiast'],
+      typeSpeed: 50,
+    });
+
+    // Slide-in Image on Load
+    window.addEventListener('load', function () {
+      document.querySelector('.rightSection').classList.add('active');
+    });
+  </script>
+</body>
+
+</html>
