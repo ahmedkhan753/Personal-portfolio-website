@@ -3,19 +3,19 @@ import smtplib
 from email.message import EmailMessage
 
 app = Flask(__name__)
-app.secret_key = '1111' 
+app.secret_key = 'YOUR_SECRET_KEY' 
 
 # ====== Email Function ======
 def send_email(name, email, message):
     msg = EmailMessage()
     msg['Subject'] = 'New Contact Form Message'
-    msg['From'] = 'ahmedk32410@gmail.com'  # your Gmail address
-    msg['To'] = 'ahmedk32410@gmail.com'    # your Gmail address (same or another)
+    msg['From'] = 'ahmedk32410@gmail.com' 
+    msg['To'] = 'ahmedk32410@gmail.com'    
     msg.set_content(f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login('ahmedk32410@gmail.com', 'lpvu ntte wikx nmiz')  # app password, NOT Gmail password
+            smtp.login('ahmedk32410@gmail.com', 'YOUR_APP_PASSWORD') 
             smtp.send_message(msg)
         return True
     except Exception as e:
