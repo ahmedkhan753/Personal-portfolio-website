@@ -200,10 +200,10 @@
       <div class="left">Ahmed's Portfolio</div>
       <div class="right">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
         </ul>
       </div>
     </nav>
@@ -221,7 +221,7 @@
         </div>
       </div>
       <div class="rightSection">
-        <img src="images/bgi.png" alt="" class="slide-in-image" />
+        <img src="{{ url_for('static', filename= 'images/bgi.png') }}" alt="" class="slide-in-image" />
       </div>
     </section>
 
@@ -232,38 +232,38 @@
       <h1>Work Experience</h1>
       <div class="box">
         <div class="vertical">
-          <img class="image-top" src="images/html.png" />
+          <img class="image-top" src="{{ url_for('static', filename= 'images/html.png') }}" />
           <div class="vertical-title">Html</div>
           <div class="vertical-desc">
-           Description to be added 
+           
           </div>
         </div>
         <div class="vertical">
-          <img class="image-top" src="images/css.png" />
+          <img class="image-top" src="{{ url_for('static', filename= 'images/css.png') }}" />
           <div class="vertical-title">Css </div>
           <div class="vertical-desc">
-            Description to be added 
+            
           </div>
         </div>
         <div class="vertical">
-          <img class="image-top" src="images/node.png" />
-          <div class="vertical-title">Node.js</div>
+          <img class="image-top" src="{{ url_for('static', filename= 'images/flask.png') }}" />
+          <div class="vertical-title">Flask</div>
           <div class="vertical-desc">
-            Description to be added.
+            
           </div>
         </div>
         <div class="vertical">
-          <img class="image-top" src="images/python.png" />
+          <img class="image-top" src="{{ url_for('static', filename= 'images/python.png') }}" />
           <div class="vertical-title">Python Development</div>
           <div class="vertical-desc">
-            Description to be added.
+            
           </div>
         </div>
         <div class="vertical">
-          <img class="image-top" src="images/java.png" />
+          <img class="image-top" src="{{ url_for('static', filename= 'images/java.png') }}" />
           <div class="vertical-title">Java Development</div>
           <div class="vertical-desc">
-            Description to be added.
+            
           </div>
         </div>
       </div>

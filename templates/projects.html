@@ -60,25 +60,25 @@
 <nav>
   <div>Ahmed's Portfolio</div>
   <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
   </div>
 </nav>
 
 <h1>My Projects</h1>
 <div class="projects">
   <div class="project">
-    <h2>Portfolio Website</h2>
-    <p>A personal website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+    <h2> PERSONAL PORTFOLIO WEBSITE </h2>
+    <p>A personal portfolio website built using Flask that showcases your projects, skills, and includes a "Contact Me" form. The contact form sends user messages directly to your email using SMTP integration. The site uses internal CSS and renders dynamic HTML pages with Flask routes.</p>
   </div>
   <div class="project">
-    <h2> Currency Convertor App</h2>
-    <p>A simple currency convertor app using JAVA and SWING library for Gui building.</p>
+    <h2> CURRENCY CONVERTOR APP </h2>
+    <p>A simple desktop application built using Java Swing that allows users to convert between different currencies in real time. The interface is user-friendly, featuring input fields for amount, source currency, and target currency with instant conversion results.</p>
   </div>
   <div class="project">
-    <h2>Coming Soon </h2>
-    <p> Null </p>
+    <h2>FLASK - CHATBOT </h2>
+    <p> A simple web application built with Flask that allows users to register, log in, and chat with the Gemini AI chatbot. The app uses secure password hashing, stores user data in a SQLite database, and integrates with the Gemini API to provide real-time AI responses. </p>
   </div>
 </div>
 
